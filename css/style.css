@@ -63,11 +63,8 @@ button.btn-submit{
     background-color: var(--bs-btn-active-bg) !important;
     border-color: var(--bs-btn-active-border-color);
 }
-#alert{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
+
+.alert{
     box-shadow: 10px 10px 0px 1000000px rgba(0, 0, 0, 0.4);
 }
 
