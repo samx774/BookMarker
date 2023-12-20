@@ -1,0 +1,73 @@
+body{
+    background-color: #F7ECDE;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul li i{
+    color: #d1512d;
+    
+}
+ul li{
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.x{
+    cursor: pointer;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    display: inline-block;
+    position: relative;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 30%;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: 0.5s;
+}
+h1:hover::after{
+    height: 65%;
+}
+.border-fix{
+    border-bottom: 2px dotted black;
+}
+h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button.btn-submit{
+    background-color: #d1512d !important;
+    color: #fff !important;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem #fec26055;
+    border-color: #d99c39;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--bs-btn-active-color) !important;
+    background-color: var(--bs-btn-active-bg) !important;
+    border-color: var(--bs-btn-active-border-color);
+}
+#alert{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    box-shadow: 10px 10px 0px 1000000px rgba(0, 0, 0, 0.4);
+}
+
